@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101015">
+<title>A Little Universe for Ayi ♡</title>
+<style>
+:root{--bg:#101015;--silver:#dedee8;--muted:#aaaab8;--line:#ffffff2c;--panel:#ffffff0c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#45434e 0%,#191920 42%,#0b0b0f 100%);color:#f5f3f8;font-family:Georgia,serif}
+main{max-width:720px;margin:auto;padding:22px 17px 55px}
+header{display:flex;justify-content:space-between;font:11px Arial,sans-serif;letter-spacing:3px;color:var(--silver);padding:8px 2px 15px}
+.progress{height:3px;background:#ffffff20;border-radius:9px;overflow:hidden}.progress span{display:block;width:0;height:100%;background:#e2e0e9;transition:.4s}
+section{display:none;min-height:70vh;padding:45px 4px 25px;text-align:center;animation:fade .5s ease}
+section.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.kicker{font:10px Arial,sans-serif;letter-spacing:4px;color:var(--muted)}
+h1{font-size:clamp(43px,11vw,68px);font-weight:400;line-height:1.02;font-style:italic;margin:22px 0}
+h2{font-size:clamp(31px,8vw,43px);font-weight:400;font-style:italic;color:var(--silver);margin:12px 0 24px}
+p{line-height:1.8}.muted{color:var(--muted)}.big-heart{font-size:54px;animation:beat 1.5s infinite}@keyframes beat{50%{transform:scale(1.13)}}
+button{border:1px solid #aaa9b8;border-radius:30px;padding:13px 20px;background:#ffffff12;color:white;font-size:13px;cursor:pointer}
+button.primary{background:#dedce5;color:#191820;border:0;font-weight:bold}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:19px;padding:21px;margin:17px 0}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:25px 5px}
+.polaroid{background:#e9e7ed;color:#24232a;padding:9px 9px 16px;box-shadow:0 8px 24px #0008;transform:rotate(-2deg)}
+.polaroid:nth-child(2){transform:rotate(2deg)}
+.polaroid img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#42414b}
+.polaroid small{display:block;margin-top:12px;font-size:12px}
+.reason{text-align:left;padding:14px 16px;border:1px solid var(--line);border-radius:13px;margin:10px 0;background:#ffffff09;font-size:14px}
+.letter{text-align:left;line-height:1.9;font-size:14px}
+footer{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;color:var(--muted);font:10px Arial,sans-serif;letter-spacing:1px}
+a{color:#e4e1ec}
+@media(min-width:600px){main{padding-top:35px}section{padding-top:65px}}
+</style>
+</head>
+<body>
+<main>
+<header><span>♡ FOR AYI</span><span>OUR FIRST MONTH</span></header>
+<div class="progress"><span id="bar"></span></div>
+
+<section class="active">
+  <div class="big-heart">♡</div>
+  <p class="kicker">A LITTLE SOMETHING FOR YOU</p>
+  <h1>A Little<br>Universe</h1>
+  <p class="muted">made with love, just for Ayi.</p>
+  <p style="font-size:48px;margin:35px">🖤</p>
+  <p><i>one month of us, and countless reasons to stay.</i></p>
+  <p class="muted" style="font:11px Arial;letter-spacing:2px">25 NOVEMBER · OUR FIRST MONTH</p>
+  <button class="primary" onclick="go(1)">Open your gift ♡</button>
+</section>
+
+<section>
+  <p class="kicker">CHAPTER 01</p><h2>Happy First Month!</h2>
+  <div class="card">
+    <div class="big-heart">♡</div>
+    <p style="font-size:19px"><i>One month may sound short, but every little moment with you has become something worth keeping.</i></p>
+    <p class="muted">Thank you for being part of my days, Ayi.</p>
+  </div>
+  <button class="primary" onclick="go(2)">Next chapter →</button>
+</section>
+
+<section>
+  <p class="kicker">CHAPTER 02</p><h2>Little Memories</h2>
+  <p class="muted">A little space for our favorite moments.</p>
+  <div class="photo-grid">
+    <div class="polaroid"><img src="Foto1.jpg" alt="Foto 1"><small>our pretty moment ♡</small></div>
+    <div class="polaroid"><img src="Foto2.jpg" alt="Foto 2"><small>my favorite person</small></div>
+    <div class="polaroid"><img src="Foto3.jpg" alt="Foto 3"><small>chapter of us</small></div>
+    <div class="polaroid"><img src="Foto4.jpg" alt="Foto 4"><small>forever favorite</small></div>
+  </div>
+  <button class="primary" onclick="go(3)">Keep going →</button>
+</section>
+
+<section>
+  <p class="kicker">CHAPTER 03</p><h2>Reasons I Adore You</h2>
+  <div class="reason">♡ The way you make ordinary days feel special.</div>
+  <div class="reason">♡ Your little habits that I secretly adore.</div>
+  <div class="reason">♡ The comfort I find in talking to you.</div>
+  <div class="reason">♡ Simply because you're you.</div>
+  <div class="reason">♡ Because choosing you is something I'd love to keep doing.</div>
+  <p class="muted">And honestly, there are so many more.</p>
+  <button class="primary" onclick="go(4)">There's a letter for you →</button>
+</section>
+
+<section>
+  <p class="kicker">CHAPTER 04 · SECRET LETTER</p><h2>A Letter for Ayi</h2>
+  <div class="card">
+    <div style="font-size:38px">✉</div>
+    <p class="muted">Something I've been wanting to tell you...</p>
+    <button class="primary" id="openLetter" onclick="document.getElementById('letter').hidden=false;this.hidden=true">Open my letter ♡</button>
+    <div class="letter" id="letter" hidden>
+      <p><i>Dear Ayi,</i></p>
+      <p>I don't know how to put all my feelings into words, but I hope you know how happy I am to have you here. Thank you for choosing to share your little world with me. Even though it's only been a month, you've given me so many moments that I want to remember.</p>
+      <p>I don't need everything to be perfect. I just hope we keep learning, growing, laughing, and choosing each other along the way. Here's to our first month, and hopefully many more beautiful months together.</p>
+      <p><i>With all my love,<br>Your favorite person. ♡</i></p>
+    </div>
+  </div>
+  <button class="primary" onclick="go(5)">One last surprise →</button>
+</section>
+
+<section>
+  <p class="kicker">THE LAST CHAPTER</p><div class="big-heart">♡</div>
+  <h1>To more us.</h1>
+  <p class="muted">If I could make one wish for us, it would be to never stop finding little reasons to fall in love with each other.</p>
+  <div class="card">
+    <p class="kicker">OUR FIRST MONTH</p>
+    <h2 style="margin:10px 0">One down,<br>forever to go.</h2>
+    <div style="font-size:40px">🖤</div>
+  </div>
+  <p><i>Happy anniversary, Ayi. I love our little story.</i></p>
+  <button onclick="go(0)">Read it all again ↺</button>
+</section>
+
+<footer><span>MADE WITH ♡ FOR AYI</span><span id="count">01 / 06</span></footer>
+</main>
+<script>
+const pages=[...document.querySelectorAll('section')];
+function go(n){pages.forEach((p,i)=>p.classList.toggle('active',i===n));document.getElementById('count').textContent=String(n+1).padStart(2,'0')+' / 06';document.getElementById('bar').style.width=((n+1)/pages.length*100)+'%';window.scrollTo({top:0,behavior:'smooth'});}
+document.getElementById('bar').style.width=(100/pages.length)+'%';
+</script>
+</body>
+</html>
